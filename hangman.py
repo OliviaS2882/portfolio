@@ -3,13 +3,13 @@ from hangman_art import logo, stages
 from hangman_words import word_list 
 
 end_of_game = False
-#word_list = ["ardvark", "baboon", "camel", "kangaroo", "elephant"]
+
+#Select a word from list.
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
 # Create a variable called 'lives' to keep track of the number of lives left. 
 # Set 'lives' to equal 6.
-
 lives = 6
 
 # Create blank list of guessed letters.
@@ -53,4 +53,6 @@ while not end_of_game:
   
   # Print relevant image from stages list to show lives remaining.
   print(stages[lives])   
+
+
 
